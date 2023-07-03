@@ -1,0 +1,110 @@
+/* Write your CSS code here */
+.registration-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media screen and (max-width: 767px) {
+  .registration-form-container {
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: start;
+  }
+}
+.form-title {
+  color: #e8580c;
+  font-size: 48px;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .form-title {
+    font-size: 36px;
+  }
+}
+.view-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  min-height: 310px;
+  border-radius: 16px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .view-container {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px #egba(126, 133, 142, 0.16);
+    padding: 48px 64px 48px 64px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  line-height: 16px;
+  color: #475569;
+}
+.name-input-field {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  padding: 8px 16px 8px 16px;
+  color: #9aa5b1;
+  outline: 0;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.success-img {
+  width: 72px;
+}
+.submit-button {
+  background-color: #e1580c;
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto';
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .submit-button {
+    width: 100%;
+  }
+}
+.error-field {
+  border: 1px solid #ff0b37;
+  background-color: #fef2f4;
+}
+.error-msg {
+  font-size: 12px;
+  font-family: 'Roboto';
+  line-height: 16px;
+  align-self: start;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  color: #ff0b37;
+}
